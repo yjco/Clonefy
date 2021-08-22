@@ -1,0 +1,26 @@
+@import 'src/assets/styles/_colors.scss';
+
+* {
+  font-family: Arial;
+}
+
+p {
+  color: $cinza-claro;
+  letter-spacing: 1.2px;
+  line-height: 200%;
+  font-size: 150%;
+}
+
+.letter {
+  background-color: $cinza-mais-escuro;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 75px;
+  padding: 25px;
+  text-align: justify;
+}
+
+.title {
+  color: $verde;
+  letter-spacing: 3px;
+}

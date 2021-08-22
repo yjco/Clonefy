@@ -1,0 +1,12 @@
+<div class="logo">
+  <img src="../assets/small.png">
+  <h3>Clonefy</h3>
+</div>
+
+<div class="search">
+  <input type="text" placeholder="Search 🔍" (input)="doSearch($event)">
+</div>
+
+<div class="list">
+  <app-album-card *ngFor="let album of albumlist" [album]="album" [card]="true"></app-album-card>
+</div>

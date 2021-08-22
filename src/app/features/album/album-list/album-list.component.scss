@@ -1,0 +1,51 @@
+@import 'src/assets/styles/_colors.scss';
+
+.logo {
+  margin-top: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: Arial;
+  letter-spacing: 10px;
+  margin: 0px;
+  margin-bottom: 10px;
+  color: $verde;
+}
+
+.list {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.search {
+  text-align: center;
+}
+
+input {
+  color: $verde;
+  width: 700px;
+  height: 30px;
+  margin: 2em;
+  border-radius: 10px;
+  border: 3px solid $cinza-mais-escuro;
+  background-color: $cinza-mais-escuro;
+  padding-left: 10px;
+  font-family: Arial;
+  text-align: center;
+}
+
+input:focus {
+  border: 2px solid $verde;
+}
+
+input:hover {
+  border: 2px solid $verde;
+  box-shadow: 0px 0px 20px $verde;
+}

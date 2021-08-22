@@ -1,0 +1,31 @@
+<div class="card" *ngIf="album && card">
+  <a [routerLink]="['/album-info', album.id]">
+    <img width="150px" height="150px" [src]="album.img">
+    <p>{{ album.title }}</p>
+  </a>
+</div>
+
+<div class="info" *ngIf="album && !card">
+  <div>
+    <img width="300px" height="300px" [src]="album.img">
+    <audio controls="controls" [src]="album.tracks[album.current].link" autoplay>
+      Audio tag not supported.
+    </audio>
+  </div>
+  <div class="text">
+    <div class="ta">
+      <p class="title">{{ album.title }}</p>
+      <p class="artist">by {{ album.artist | uppercase }}</p>
+    </div>
+    <div class="tracks">
+      <p>Tracks</p>
+      <ol type="1">
+        <li *ngFor="let track of album.tracks">
+          <a (click)="setSong(track.id)" href="#" onClick="return false;">
+            ( {{ track.length | time }} ) {{ track.name }}
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+@import 'src/assets/styles/_colors.scss';
+
+* {
+  font-family: Arial;
+  text-decoration: none;
+}
+
+.card {
+  width: 200px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  border-radius: 5px 5px;
+  background-color: $cinza-mais-escuro;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+  }
+
+  p {
+    color: $cinza-claro;
+    background-color: $cinza-mais-escuro;
+    letter-spacing: 2px;
+    margin: 15px;
+  }
+
+  a {
+    padding: 25px;
+  }
+
+}
+
+.card:hover {
+  border: 2px solid $verde;
+  box-shadow: 0px 0px 10px $verde;
+
+  p {
+    color: $verde;
+  }
+
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+
+  audio {
+    margin-left: -377.5px;
+    margin-bottom: -50px;
+  }
+
+  .text {
+    margin-top: 50px;
+    margin-left: 50px;
+
+    .ta {
+      background-color: $cinza-mais-escuro;
+      border: 20px solid $cinza-mais-escuro;
+      border-right: 500px solid $cinza-mais-escuro;
+
+      .title {
+        margin-bottom: -10px;
+        letter-spacing: 2px;
+        color: $verde;
+        font-size: 25px;
+      }
+
+      .artist {
+        margin-left: 40px;
+        color: $verde;
+        font-size: 15px;
+      }
+
+    }
+
+    .tracks {
+      margin-top: 25px;
+      border: 5px solid $cinza-mais-escuro;
+      background-color: $cinza-mais-escuro;
+
+      p {
+        font-size: 20px;
+        margin-left: 20px;
+        color: $cinza-claro;
+      }
+
+      li {
+        margin-left: 20px;
+        color: $cinza-claro;
+        padding: 3px;
+
+        a {
+          color: $cinza-claro;
+        }
+
+      }
+
+      li:hover {
+        color: $verde;
+
+        a {
+          color: $verde;
+        }
+
+      }
+
+    }
+
+  }
+
+  img {
+    margin: 50px;
+    margin-right: 75px;
+    border: 5px solid $verde;
+    box-shadow: 0px 0px 30px $verde;
+  }
+
+}
+
